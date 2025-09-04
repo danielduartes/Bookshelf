@@ -10,12 +10,17 @@
 ### 1. **Instalar Dependências**
 ```bash
 cd Backend
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
-### 2. **Executar a API**
+### 2. **Executar a API (Opção 1 - Uvicorn)**
 ```bash
-python main.py
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
+```
+
+### 3. **Executar a API (Opção 2 - Direto)**
+```bash
+python3 main.py
 ```
 
 Você verá algo como:
@@ -26,10 +31,10 @@ INFO:     Application startup complete.
 INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
 ```
 
-### 3. **Testar com Script Automático**
+### 4. **Testar com Script Automático**
 Em outro terminal:
 ```bash
-python test_api.py
+python3 test_api.py
 ```
 
 ### 4. **Testar Manualmente**
