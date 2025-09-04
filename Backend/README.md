@@ -6,29 +6,8 @@ Backend da aplicação Bookshelf desenvolvido com FastAPI, SQLAlchemy ORM e arqu
 
 ```
 Backend/
-├── controllers/           # Camada de apresentação (APIs)
-│   └── livro_controller.py
-├── services/             # Camada de lógica de negócio
-│   └── livro_service.py
-├── repositories/         # Camada de acesso a dados
-│   ├── livro_repository.py
-│   └── usuario_repository.py
 ├── database/
-│   ├── models/           # Modelos SQLAlchemy (separados por entidade)
-│   │   ├── __init__.py
-│   │   ├── usuario_model.py
-│   │   ├── livro_model.py
-│   │   ├── genero_model.py
-│   │   ├── registro_model.py
-│   │   └── tag_model.py
-│   ├── database.py       # Configuração do banco
-│   └── database_models.py # (legado - será removido)
-├── models/               # Modelos Pydantic (validação API)
-│   ├── __init__.py
-│   ├── enums.py
-│   ├── livro.py
-│   ├── usuario.py
-│   └── ...
+│   ├── schema.sql        # Schemas SQL
 ├── main.py               # Aplicação FastAPI principal
 ├── requirements.txt      # Dependências
 └── README.md             # Documentação
